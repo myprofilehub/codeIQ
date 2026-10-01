@@ -1,6 +1,7 @@
 services:
-  - type: static
+  - type: web
     name: codeiq-studio
+    env: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     pullRequestPreviewsEnabled: true
